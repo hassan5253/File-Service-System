@@ -1,0 +1,64 @@
+[09-Sep-2021 08:53:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/services.php on line 18
+[09-Sep-2021 08:53:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/mail.php on line 16
+[09-Sep-2021 08:56:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/filesystems.php on line 16
+[09-Sep-2021 08:57:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/app.php on line 16
+[14-Sep-2021 04:02:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/services.php on line 18
+[14-Sep-2021 04:02:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/mail.php on line 16
+[14-Sep-2021 04:06:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/filesystems.php on line 16
+[14-Sep-2021 04:07:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/app.php on line 16
+[15-Oct-2021 20:14:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/services.php on line 18
+[15-Oct-2021 20:15:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/mail.php on line 16
+[15-Oct-2021 20:26:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/filesystems.php on line 16
+[15-Oct-2021 20:29:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/app.php on line 16
+[23-Oct-2021 00:18:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/services.php on line 18
+[23-Oct-2021 00:20:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/mail.php on line 16
+[23-Oct-2021 00:49:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/filesystems.php on line 16
+[23-Oct-2021 00:54:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ljz29plvbph9/public_html/muzamil/assets.smrsoftwares.com/config/app.php on line 16
