@@ -1,58 +1,154 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+Web File Sharing Service with Distributed Blocklist
+📌 Overview
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+This project is a prototype implementation of a web-based file sharing service that integrates a distributed blocklist to prevent unauthorized file distribution. The system allows users to upload, download, block, and unblock files, while administrators can moderate requests via a dedicated interface.
 
-## About Laravel
+The main objective is to demonstrate:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+File sharing functionality through a Laravel web application.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Blocklist enforcement using SHA-256 hashes.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+Secure and user-friendly interaction across frontend, backend, and database.
 
-## Learning Laravel
+This project was developed as part of the Datenbanken und Web-Techniken course at TU Chemnitz.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+✨ Features
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+File Upload & Download
 
-## Laravel Sponsors
+Upload files up to 10 MB.
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+Unique download URL per file.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Pulse Storm](http://www.pulsestorm.net/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
+Meta-information (name, size, upload date) displayed on download page.
 
-## Contributing
+Blocklist Integration
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Files checked against TU Chemnitz Blocklist Web Service.
 
-## Security Vulnerabilities
+Blocked files cannot be downloaded.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Requests for blocking/unblocking with reasons.
 
-## License
+Admin Interface
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Review pending block/unblock requests.
+
+Approve/decline with live blocklist updates.
+
+Usability & Security
+
+Responsive frontend (desktop + mobile).
+
+Prevention of hot-linking.
+
+Automatic removal of inactive files (14 days).
+
+Additional Features (Group Work)
+
+Multiple file uploads.
+
+User registration & login (secure password hashing).
+
+File management for registered users.
+
+Rate limiting for unregistered users (speed & time limits).
+
+🛠️ Technologies Used
+
+Framework: Laravel (PHP)
+
+Database: MySQL
+
+Frontend: Blade templates, Bootstrap/CSS, JavaScript
+
+API: RESTful API (Laravel controllers + routes)
+
+Authentication: Laravel Auth (with hashed passwords)
+
+Blocklist Service: TU Chemnitz Blocklist Web Service (SHA-256 based)
+
+🚀 Installation & Setup
+1. Clone the Repository
+git clone https://github.com/your-username/dbw-file-sharing.git
+cd dbw-file-sharing
+
+2. Install Dependencies
+composer install
+npm install && npm run dev
+
+3. Configure Environment
+
+Copy the .env.example to .env and update:
+
+Database connection (DB_DATABASE, DB_USERNAME, DB_PASSWORD)
+
+TU Chemnitz login credentials for Blocklist Web Service
+
+cp .env.example .env
+php artisan key:generate
+
+4. Set Up Database
+php artisan migrate
+
+5. Run the Application
+php artisan serve
+
+
+The app will be available at: http://127.0.0.1:8000
+
+📖 Usage
+Upload File
+
+Open the web interface.
+
+Select a file (max 10 MB).
+
+Receive a unique download link.
+
+Download File
+
+Enter the download URL.
+
+View file details.
+
+Download if not blocked.
+
+Admin Actions
+
+Access the admin panel via /admin.
+
+Review block/unblock requests.
+
+Approve or reject with reasons.
+
+📡 API Documentation
+
+The API provides endpoints for:
+
+File upload & download
+
+User authentication & management
+
+Blocklist requests (block/unblock)
+
+Admin actions
+
+👉 Full endpoint details are included in the appendix of the project report.
+
+📌 Future Improvements
+
+Improve UI with Vue.js or React integration.
+
+Add JWT-based API authentication.
+
+Enable HTTPS for secure communication.
+
+Extend admin dashboard with analytics (upload/download statistics).
+
+👨‍💻 Authors
+
+Hassan Younus
+
+(Add co-author if applicable)
